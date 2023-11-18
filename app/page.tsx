@@ -1,18 +1,18 @@
 import Carasoul from './components/landingPage/Carasoul'
 import IndustriesSection from './components/landingPage/IndustrialSection';
+import ReachSection from './components/landingPage/ReachSection';
+import WhatsNew from './components/landingPage/WhatsNew';
+import AnnouncementSection from './components/landingPage/announcementSection';
 
 export default function Home() {
-  const images = [
-    'https://images.app.goo.gl/HTZceEWP9A5yeLdN6',
-    'https://images.app.goo.gl/HTZceEWP9A5yeLdN6',
-    'https://images.app.goo.gl/HTZceEWP9A5yeLdN6',
-    // Add more image URLs as needed
-  ];
   return (
     <>
-      <div className="flex">
-        <Carasoul/>
-        <IndustriesSection/>
+      <div className='flex-row'>
+        <Carasoul />
+        <WhatsNew/>
+        <IndustriesSection />
+        {/* <AnnouncementSection /> */}
+        <ReachSection />
       </div>
     </>
   )

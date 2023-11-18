@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['images.app.goo.gl'],
+        domains: ['flowbite.s3.amazonaws.com'],
     },
 }
 
