@@ -1,36 +1,53 @@
-import React from 'react';
-import HelpCard from '../utils-card/card';
-import Image from 'next/image';
-import { FaDrupal } from 'react-icons/fa';
+import { GiDiamondTrophy } from "react-icons/gi";
 
-const AnnouncementSection = () => {
+const AnnouncementSection: React.FC = () => {
   return (
-    <section className="announcement_section">
+    <section className="announcement_section bg-white py-24">
       <div className="container">
         <div className="widget-title text-center">
-          <h3 className="wow fadeInUp" style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
-            What’s New
-          </h3>
+          <h3 className="wow fadeInUp">What’s New</h3>
           <p>Here’s the latest buzz from Interloop</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
-          <div className="col-lg-4 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="300ms" style={{ visibility: 'visible', animationDelay: '300ms', animationName: 'fadeInUp' }}>
-            <div className="dateRow">
-              <div className="dateBlog">
-                <Image src="images/os_d.png" alt="" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+          {/* Card 1 */}
+          <div className="wow fadeInUp" data-wow-delay="300ms">
+            <div className="relative">
+              <div className="dateBlog absolute top-0 right-0 bg-orange-300 w-20 h-20 flex items-center justify-center rounded-full">
+                <GiDiamondTrophy className="text-5xl text-green-900" />
               </div>
             </div>
-            <div className="announcement_content">
-              <HelpCard title="Accolades" icon={FaDrupal} content="We are delighted to announce that Interloop has won the NASSCOM award for Technology &amp; Excellence in
-                Artificial Intelligence and Machine Learning at NATC Award 2019."/>
-              <small>Accolades</small>
-              <h6>Interloop recognized<br /> by NASSCOM</h6>
-              <p>We are delighted to announce that Interloop has won the NASSCOM award for Technology &amp; Excellence in
-                Artificial Intelligence and Machine Learning at NATC Award 2019.</p>
+            <div className="announcement_content text-white hover:bg-blue-700 hover:transform hover:shadow-lg hover:translate-y-[-8px] transition duration-300 ease-in-out py-12 px-4 rounded-lg bg-green-900">
+              <small className="font-semibold">Accolades</small>
+              <h6 className="text-2xl font-normal mb-4">Interloop recognized by NASSCOM</h6>
+              <p>We are delighted to announce that Interloop has won the NASSCOM award for Technology & Excellence in Artificial Intelligence and Machine Learning at NATC Award 2019.</p>
             </div>
           </div>
-
+          {/* Card 2 and Card 3 similar structure */}
+          <div className="wow fadeInUp" data-wow-delay="300ms">
+            <div className="relative">
+              <div className="dateBlog absolute top-0 right-0 bg-orange-300 w-20 h-20 flex items-center justify-center rounded-full">
+                <GiDiamondTrophy className="text-5xl text-green-900" />
+              </div>
+            </div>
+            <div className="announcement_content text-white hover:bg-blue-700 hover:transform hover:shadow-lg hover:translate-y-[-8px] transition duration-300 ease-in-out py-12 px-4 rounded-lg bg-green-900">
+              <small className="font-semibold">Accolades</small>
+              <h6 className="text-2xl font-normal mb-4">Interloop recognized by NASSCOM</h6>
+              <p>We are delighted to announce that Interloop has won the NASSCOM award for Technology & Excellence in Artificial Intelligence and Machine Learning at NATC Award 2019.</p>
+            </div>
+          </div>
+          <div className="wow fadeInUp" data-wow-delay="300ms">
+            <div className="relative">
+              <div className="dateBlog absolute top-0 right-0 bg-orange-300 w-20 h-20 flex items-center justify-center rounded-full">
+                <GiDiamondTrophy className="text-5xl text-green-900" />
+              </div>
+            </div>
+            <div className="announcement_content text-white hover:bg-blue-700 hover:transform hover:shadow-lg hover:translate-y-[-8px] transition duration-300 ease-in-out py-12 px-4 rounded-lg bg-green-900">
+              <small className="font-semibold">Accolades</small>
+              <h6 className="text-2xl font-normal mb-4">Interloop recognized by NASSCOM</h6>
+              <p>We are delighted to announce that Interloop has won the NASSCOM award for Technology & Excellence in Artificial Intelligence and Machine Learning at NATC Award 2019.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

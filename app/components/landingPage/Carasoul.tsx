@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image';
 import React, { useState } from 'react';
+import { FaGreaterThan, FaLessThan } from "react-icons/fa";
 import image1 from '../../../public/carasoul images/drew-patrick-miller-_o6AAx9dl_Y-unsplash.jpg';
 import image2 from '../../../public/carasoul images/keagan-henman-e6BkcrbCvzs-unsplash.jpg';
 import image3 from '../../../public/carasoul images/keagan-henman-iFBIdX54BOk-unsplash.jpg';
@@ -54,14 +55,14 @@ const Gallery: React.FC = () => {
         className="absolute top-1/2 left-4 z-10 transform -translate-y-1/2 bg-gray-300 px-3 py-1 rounded-md"
         onClick={prevImage}
       >
-        Prev
+        <FaLessThan/>
       </button>
       <button
         type="button"
         className="absolute top-1/2 right-4 z-10 transform -translate-y-1/2 bg-gray-300 px-3 py-1 rounded-md"
         onClick={nextImage}
       >
-        Next
+        <FaGreaterThan/>
       </button>
     </div>
 

@@ -11,7 +11,7 @@ export default function Home() {
         <Carasoul />
         <WhatsNew/>
         <IndustriesSection />
-        {/* <AnnouncementSection /> */}
+        <AnnouncementSection />
         <ReachSection />
       </div>
     </>
