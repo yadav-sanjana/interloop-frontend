@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const ReachSection = () => {
@@ -15,7 +16,7 @@ const ReachSection = () => {
         <div className="spread-map mt-8">
           <div className="section-map">
             <div className="map-container mt-4">
-              <img src="images/map.png" alt="Built for Global Businesses" />
+              <Image src="images/map.png" alt="Built for Global Businesses" />
 
               {/* Rest of the indicator elements */}
               {/* ... */}
