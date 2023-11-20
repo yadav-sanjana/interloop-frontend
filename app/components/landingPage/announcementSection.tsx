@@ -1,5 +1,6 @@
 import React from 'react';
 import HelpCard from '../utils-card/card';
+import Image from 'next/image';
 
 const AnnouncementSection = () => {
   return (
@@ -16,7 +17,7 @@ const AnnouncementSection = () => {
           <div className="col-lg-4 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="300ms" style={{ visibility: 'visible', animationDelay: '300ms', animationName: 'fadeInUp' }}>
             <div className="dateRow">
               <div className="dateBlog">
-                <img src="images/os_d.png" alt="" />
+                <Image src="images/os_d.png" alt="" />
               </div>
             </div>
             <div className="announcement_content">

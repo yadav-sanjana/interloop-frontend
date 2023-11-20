@@ -9,10 +9,6 @@ import { NewFeatures } from '../utils-card/NewFeatures';
 import logo from '../../../public/carasoul images/interloop logo.jpg'
 import Image from 'next/image';
 import image2 from '../../../public/carasoul images/keagan-henman-e6BkcrbCvzs-unsplash.jpg';
-import { FaFacebook } from 'react-icons/fa';
-import { DiDrupal } from "react-icons/di";
-
-import { DiDotnet } from "react-icons/di";
 
 
 
