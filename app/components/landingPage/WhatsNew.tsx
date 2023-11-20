@@ -2,15 +2,12 @@
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 import { newFeatures } from '../constants';
-import { staggerContainer, fadeIn } from '../../../utils/motion';
+import { fadeIn } from '../../../utils/motion';
 import styles from '../../../styles';
 import { TitleText, TypingText } from '../CustomerTexts';
 import { NewFeatures } from '../utils-card/NewFeatures';
-import logo from '../../../public/carasoul images/interloop logo.jpg'
 import Image from 'next/image';
 import image2 from '../../../public/carasoul images/keagan-henman-e6BkcrbCvzs-unsplash.jpg';
-
-
 
 const WhatsNew = () => {
     const controls = useAnimation();
@@ -44,7 +41,7 @@ const WhatsNew = () => {
                     className={`flex-1 ${styles.flexCenter}`}
                 >
                     <Image
-                        src={image2}
+                        src='/carasoul images/keagan-henman-e6BkcrbCvzs-unsplash.jpg'
                         alt="whats new"
                         width={600}
                         height={600}

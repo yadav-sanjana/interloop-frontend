@@ -1,6 +1,7 @@
 import React from 'react';
 import HelpCard from '../utils-card/card';
 import Image from 'next/image';
+import { FaDrupal } from 'react-icons/fa';
 
 const AnnouncementSection = () => {
   return (
@@ -21,7 +22,7 @@ const AnnouncementSection = () => {
               </div>
             </div>
             <div className="announcement_content">
-              <HelpCard title="Accolades" content="We are delighted to announce that Interloop has won the NASSCOM award for Technology &amp; Excellence in
+              <HelpCard title="Accolades" icon={FaDrupal} content="We are delighted to announce that Interloop has won the NASSCOM award for Technology &amp; Excellence in
                 Artificial Intelligence and Machine Learning at NATC Award 2019."/>
               <small>Accolades</small>
               <h6>Interloop recognized<br /> by NASSCOM</h6>
@@ -30,8 +31,6 @@ const AnnouncementSection = () => {
             </div>
           </div>
 
-          {/* Repeat similar structures for other columns */}
-          {/* ... */}
         </div>
       </div>
     </section>

@@ -16,7 +16,7 @@ const ReachSection = () => {
         <div className="spread-map mt-8">
           <div className="section-map">
             <div className="map-container mt-4">
-              <Image src="images/map.png" alt="Built for Global Businesses" />
+              {/* <Image src="images/map.png" alt="Built for Global Businesses" /> */}
 
               {/* Rest of the indicator elements */}
               {/* ... */}
