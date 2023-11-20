@@ -6,9 +6,15 @@ import { staggerContainer, fadeIn } from '../../../utils/motion';
 import styles from '../../../styles';
 import { TitleText, TypingText } from '../CustomerTexts';
 import { NewFeatures } from '../utils-card/NewFeatures';
-import { FaFacebook } from 'react-icons/fa';
 import logo from '../../../public/carasoul images/interloop logo.jpg'
 import Image from 'next/image';
+import image2 from '../../../public/carasoul images/keagan-henman-e6BkcrbCvzs-unsplash.jpg';
+import { FaFacebook } from 'react-icons/fa';
+import { DiDrupal } from "react-icons/di";
+
+import { DiDotnet } from "react-icons/di";
+
+
 
 const WhatsNew = () => {
     const controls = useAnimation();
@@ -18,7 +24,7 @@ const WhatsNew = () => {
     }, [controls]);
 
     return (
-        <section className={`${styles.paddings} relative z-10`}>
+        <section className={`${styles.paddings} relative z-10 px-4`}>
             <motion.div
                 // variants={staggerContainer}
                 initial="hidden"
@@ -33,7 +39,7 @@ const WhatsNew = () => {
                     <TitleText title={<>What's new about Interloop?</>} />
                     <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
                         {newFeatures.map((feature) => (
-                            <NewFeatures imgUrl={''} key={feature.title} {...feature} />
+                            <NewFeatures key={feature.title} {...feature} />
                         ))}
                     </div>
                 </motion.div>
@@ -42,10 +48,10 @@ const WhatsNew = () => {
                     className={`flex-1 ${styles.flexCenter}`}
                 >
                     <Image
-                        src={logo}
+                        src={image2}
                         alt="whats new"
-                        width={100}
-                        height={100}
+                        width={600}
+                        height={600}
                     >
 
                     </Image>

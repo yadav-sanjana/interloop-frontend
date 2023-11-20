@@ -1,6 +1,5 @@
 import React from 'react';
 import HelpCard from '../utils-card/card';
-import { FaFacebook } from 'react-icons/fa';
 import { LiaSellsy } from "react-icons/lia";
 import { FaHandHoldingMedical } from "react-icons/fa";
 import { CgHello } from "react-icons/cg";

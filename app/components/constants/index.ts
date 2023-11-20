@@ -1,4 +1,6 @@
 import { FaTwitter, FaLinkedin, FaInstagramSquare, FaFacebook } from "react-icons/fa";
+import { DiDrupal } from "react-icons/di";
+import { DiDotnet } from "react-icons/di";
 
 export const socials = [
     {
@@ -21,13 +23,13 @@ export const socials = [
 
 export const newFeatures = [
     {
-        // imgUrl: { logo },
+        imgUrl: { DiDrupal },
         title: 'Career Consulting',
         subtitle:
             'we have the latest update with new world for you to try never mind',
     },
     {
-        // imgUrl: { logo },
+        imgUrl: { DiDotnet },
         title: 'Hospitality',
         subtitle:
             'In the latest update, your eyes are narrow, making the world more realistic than ever',
