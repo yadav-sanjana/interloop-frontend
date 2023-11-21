@@ -12,9 +12,9 @@ export default function Home() {
         <Carasoul />
         <WhatsNew/>
         <IndustriesSection />
-        <PartnersSection/>
+        {/* <PartnersSection/> */}
         <AnnouncementSection />
-        <ReachSection />
+        {/* <ReachSection /> */}
       </div>
     </>
   )

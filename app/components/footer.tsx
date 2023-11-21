@@ -35,7 +35,7 @@ const Footer = () => {
                         <a href='#'><li className='p-2 space-x-1'>Introduction | </li></a>
                         <a href='#'><li className='p-2 space-x-1'>Career | </li></a>
                         <a href='#'><li className='p-2 space-x-1'>Teams | </li></a>
-                        <a href='#'><li className='p-2 space-x-1'>Testimonials |</li></a>
+                        <a href='#'><li className='p-2 space-x-1'>Testimonials | </li></a>
                         <a href='#'><li className='p-2 space-x-1'>About</li></a>
                     </ul>
 

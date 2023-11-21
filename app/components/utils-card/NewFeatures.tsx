@@ -13,7 +13,7 @@ interface NewFeaturesProps {
 export const NewFeatures: React.FC<NewFeaturesProps> = ({ title, subtitle}) => (
     <div className="flex-1 flex flex-col sm:max-w-[250px] min-w-[210px]">
         <div
-            className={`${styles.flexCenter} w-[70px] h-[70px] rounded-[24px] bg-green-800`}
+            className={`${styles.flexCenter} w-[70px] h-[70px] rounded-[24px] bg-orange-600`}
         >
             <DiDrupal className="w-1/2 h-1/2 object-contain"/>
             {/* <Image src={imgUrl} alt="icon" className="w-1/2 h-1/2 object-contain" /> */}

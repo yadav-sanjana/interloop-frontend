@@ -22,7 +22,7 @@ const IndustriesSection: React.FC = () => {
     }, [controls]);
 
     return (
-        <section className="bg-orange-300 text-black">
+        <section className="text-gray-700">
             <div className="container mx-auto pt-10">
                 <div className="text-center">
                     <motion.div
@@ -47,6 +47,7 @@ const IndustriesSection: React.FC = () => {
                 <div className="flex flex-wrap justify-center">
 
                     <div className="w-full flex-row flex sm:w-1/2 lg:w-1/4 p-4 transition-transform duration-300 transform hover:-translate-y-1">
+                        
                         <HelpCard icon={GrUserManager} title="Q.S.R" content="Custom-built solutions let you easily manage your restaurant operations, whether you're running a single location or a network." />
                     </div>
                     <div className="w-full flex-row flex sm:w-1/2 lg:w-1/4 p-4 transition-transform duration-300 transform hover:-translate-y-1">
