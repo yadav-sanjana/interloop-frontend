@@ -3,6 +3,7 @@ import IndustriesSection from './components/landingPage/IndustrialSection';
 import ReachSection from './components/landingPage/ReachSection';
 import PartnersSection from './components/landingPage/Testimonials';
 import WhatsNew from './components/landingPage/WhatsNew';
+import WhoSection from './components/landingPage/Who_Intro';
 import AnnouncementSection from './components/landingPage/announcementSection';
 
 export default function Home() {
@@ -10,11 +11,12 @@ export default function Home() {
     <>
       <div className='flex-row'>
         <Carasoul />
-        <WhatsNew/>
+        <WhoSection/>
         <IndustriesSection />
         {/* <PartnersSection/> */}
+        <WhatsNew/>
         <AnnouncementSection />
-        {/* <ReachSection /> */}
+        <ReachSection />
       </div>
     </>
   )

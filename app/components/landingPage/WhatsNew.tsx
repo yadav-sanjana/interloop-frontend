@@ -7,7 +7,6 @@ import styles from '../../../styles';
 import { TitleText, TypingText } from '../CustomerTexts';
 import { NewFeatures } from '../utils-card/NewFeatures';
 import Image from 'next/image';
-import image2 from '../../../public/carasoul images/keagan-henman-e6BkcrbCvzs-unsplash.jpg';
 
 const WhatsNew = () => {
     const controls = useAnimation();
