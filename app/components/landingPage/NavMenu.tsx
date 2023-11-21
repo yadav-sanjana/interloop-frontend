@@ -10,37 +10,37 @@ const NavMenu = () => {
                         <ul className="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
                             <li>
                                 <Link href="#">
-                                    <div className="text-gray-900 dark:text-white hover:underline" aria-current="page">Business Automation</div>
+                                    <div className="text-gray-900 hover:underline" aria-current="page">Business Automation</div>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#">
-                                    <div className="text-gray-900 dark:text-white hover:underline">Finance Solution</div>
+                                    <div className="text-gray-900  hover:underline">Finance Solution</div>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#">
-                                    <div className="text-gray-900 dark:text-white hover:underline">HR Solution</div>
+                                    <div className="text-gray-900  hover:underline">HR Solution</div>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#">
-                                    <div className="text-gray-900 dark:text-white hover:underline">Compilance Management</div>
+                                    <div className="text-gray-900  hover:underline">Compilance Management</div>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#">
-                                    <div className="text-gray-900 dark:text-white hover:underline">CSR</div>
+                                    <div className="text-gray-900  hover:underline">CSR</div>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#">
-                                    <div className="text-gray-900 dark:text-white hover:underline">Our Story</div>
+                                    <div className="text-gray-900  hover:underline">Our Story</div>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#">
-                                    <div className="text-gray-900 dark:text-white hover:underline">Contact us</div>
+                                    <div className="text-gray-900  hover:underline">Contact us</div>
                                 </Link>
                             </li>
                         </ul>

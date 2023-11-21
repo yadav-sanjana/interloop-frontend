@@ -19,7 +19,7 @@ const NavBar = () => {
                         </div>
                     </Link>
                     <div className="flex items-center space-x-6 rtl:space-x-reverse">
-                        <Link href="tel:5541251234" className="text-sm text-gray-500 dark:text-white hover:underline"></Link>
+                        <Link href="tel:5541251234" className="text-sm text-gray-500  hover:underline"></Link>
                         <Link href="#" className="text-sm text-blue-600 dark:text-blue-500 hover:underline">Login</Link>
                     </div>
                 </div>
