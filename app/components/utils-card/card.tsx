@@ -1,8 +1,6 @@
 'use client'
 import { IconType } from "react-icons"
-import { motion, useAnimation } from 'framer-motion';
-import { fadeIn } from '@/utils/motion';
-import styles from '../../../styles';
+import { useAnimation } from 'framer-motion';
 import { useEffect } from "react";
 
 interface HelpCardProps {
@@ -29,7 +27,7 @@ const HelpCard: React.FC<HelpCardProps> = ({ title, content, icon: Icon }) => {
                     variants={fadeIn('up', 'tween', 0.2, 1)}
                     className="flex-[0.95] flex justify-center flex-col"
                 > */}
-                    <div className="max-w-sm hover:bg-blue-300 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div className="max-w-sm hover:bg-blue-300 p-6 bg-white border border-gray-200 rounded-lg shadow">
 
                         <Icon className="h-20 w-20 text-orange-600" />
                         <a href="#">

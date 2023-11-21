@@ -4,9 +4,9 @@ import React from 'react'
 const NavMenu = () => {
     return (
         <div>
-            <nav className="bg-gray-50 dark:bg-gray-700 flex items-center">
+            <nav className="bg-gray-50 flex items-center">
                 <div className="max-w-screen-xl px-4 py-3 mx-auto">
-                    <div className="flex items-center">
+                    <div className="flex items-center gap-8">
                         <ul className="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
                             <li>
                                 <Link href="#">
