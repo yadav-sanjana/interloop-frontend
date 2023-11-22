@@ -4,6 +4,7 @@ import './globals.css'
 import NavBar from './components/landingPage/NavBar'
 import NavMenu from './components/landingPage/NavMenu'
 import Footer from './components/footer'
+import Preloader from './components/Preloader'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,13 +21,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div>
+        <div className='mx-auto'>
+          <Preloader />
           <NavBar />
           <NavMenu />
           {children}
         </div>
         <footer>
-          <Footer/>
+          <Footer />
         </footer>
       </body>
     </html>

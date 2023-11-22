@@ -1,3 +1,4 @@
+import Preloader from './components/Preloader';
 import Carasoul from './components/landingPage/Carasoul'
 import IndustriesSection from './components/landingPage/IndustrialSection';
 import ReachSection from './components/landingPage/ReachSection';
@@ -9,7 +10,7 @@ import AnnouncementSection from './components/landingPage/announcementSection';
 export default function Home() {
   return (
     <>
-      <div className='flex-row'>
+      <div className='flex-row w-fit overflow-y-hidden'>
         <Carasoul />
         <WhoSection/>
         <IndustriesSection />
