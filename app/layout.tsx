@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import NavBar from './components/landingPage/NavBar'
-import NavMenu from './components/landingPage/NavMenu'
 import Footer from './components/footer'
 import Preloader from './components/Preloader'
 
@@ -21,10 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className='mx-auto'>
+        <div>
           <Preloader />
           <NavBar />
-          <NavMenu />
           {children}
         </div>
         <footer>

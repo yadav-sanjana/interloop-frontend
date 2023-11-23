@@ -15,7 +15,7 @@ const WhoSection = () => {
         controls.start('show');
     }, [controls]);
     return (
-        <section className={`${styles.paddings} relative z-10 px-4`}>
+        <section className={`${styles.paddings} relative z-10`}>
             <motion.div
                 // variants={staggerContainer}
                 initial="hidden"

@@ -36,8 +36,8 @@ const AnnouncementSection: React.FC = () => {
           {/* Card 1 */}
           <div className="wow fadeInUp" data-wow-delay="300ms">
             <div className="relative">
-              <div className="dateBlog m-2 absolute top-0 right-0 bg-orange-600 w-20 h-20 flex items-center justify-center rounded-full">
-                <GiDiamondTrophy className="text-5xl text-blue-900" />
+              <div className="dateBlog m-2 absolute top-0 right-0 bg-orange-600 w-14 h-14 flex items-center justify-center rounded-full">
+                <GiDiamondTrophy className="text-4xl text-blue-900" />
               </div>
             </div>
             <div className="announcement_content text-gray-700 border-2 hover:bg-blue-300 hover:transform hover:shadow-lg hover:translate-y-[-8px] transition duration-300 ease-in-out py-12 px-4 rounded-lg">
@@ -49,8 +49,8 @@ const AnnouncementSection: React.FC = () => {
           {/* Card 2 and Card 3 similar structure */}
           <div className="wow fadeInUp" data-wow-delay="300ms">
             <div className="relative">
-              <div className="dateBlog m-2 absolute top-0 right-0 bg-orange-600 w-20 h-20 flex items-center justify-center rounded-full">
-                <GiDiamondTrophy className="text-5xl text-blue-900" />
+              <div className="dateBlog m-2 absolute top-0 right-0 bg-orange-600 w-14 h-14 flex items-center justify-center rounded-full">
+                <GiDiamondTrophy className="text-4xl text-blue-900" />
               </div>
             </div>
             <div className="announcement_content text-gray-700 border-2 hover:bg-blue-300 hover:transform hover:shadow-lg hover:translate-y-[-8px] transition duration-300 ease-in-out py-12 px-4 rounded-lg">
@@ -61,8 +61,8 @@ const AnnouncementSection: React.FC = () => {
           </div>
           <div className="wow fadeInUp" data-wow-delay="300ms">
             <div className="relative">
-              <div className="dateBlog m-2 absolute top-0 right-0 bg-orange-600 w-20 h-20 flex items-center justify-center rounded-full">
-                <GiDiamondTrophy className="text-5xl text-blue-900" />
+              <div className="dateBlog m-2 absolute top-0 right-0 bg-orange-600 w-14 h-14 flex items-center justify-center rounded-full">
+                <GiDiamondTrophy className="text-4xl text-blue-900" />
               </div>
             </div>
             <div className="announcement_content text-gray-700 border-2 hover:bg-blue-300 hover:transform hover:shadow-lg hover:translate-y-[-8px] transition duration-300 ease-in-out py-12 px-4 rounded-lg">

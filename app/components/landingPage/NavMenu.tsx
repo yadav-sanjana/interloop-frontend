@@ -4,10 +4,10 @@ import React from 'react'
 const NavMenu = () => {
     return (
         <div>
-            <nav className="bg-gray-50 flex items-center">
+            <nav className="bg-white border-gray-200 p-4 flex items-center">
                 <div className="max-w-screen-xl px-4 py-3 mx-auto">
                     <div className="flex items-center gap-8">
-                        <ul className="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+                        <ul className="flex flex-row font-semibold mt-0 space-x-8 rtl:space-x-reverse text-base">
                             <li>
                                 <Link href="#">
                                     <div className="text-gray-900 hover:underline" aria-current="page">Business Automation</div>

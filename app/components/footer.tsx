@@ -24,18 +24,16 @@ const Footer = () => {
             initial="hidden"
             animate={controls}
             ref={ref}
-            className={`${styles.xPaddings} py-8 relative`}
+            className={`${styles.xPaddings} p-4 py-8 relative`}
         >
             <div className="footer-gradient" />
-            <div className={`${styles.innerWidth} mx-auto flex flex-col`}>
-                <div className="flex items-center justify-center flex-wrap gap-5">
-
-
+            <div className={`${styles.innerWidth} flex flex-col justify-between items-center mx-auto max-w-screen-xl p-4`}>
+                <div className="flex items-center justify-center flex-wrap gap-2">
                     <ul className='flex'>
-                        <a href='#'><li className='p-2 space-x-1'>Introduction | </li></a>
-                        <a href='#'><li className='p-2 space-x-1'>Career | </li></a>
-                        <a href='#'><li className='p-2 space-x-1'>Teams | </li></a>
-                        <a href='#'><li className='p-2 space-x-1'>Testimonials | </li></a>
+                        <a href='#'><li className='p-2 space-x-1'>Introduction  |</li></a>
+                        <a href='#'><li className='p-2 space-x-1'>Career  |</li></a>
+                        <a href='#'><li className='p-2 space-x-1'>Teams  |</li></a>
+                        <a href='#'><li className='p-2 space-x-1'>Testimonials  |</li></a>
                         <a href='#'><li className='p-2 space-x-1'>About</li></a>
                     </ul>
 
@@ -44,16 +42,16 @@ const Footer = () => {
                 <div className="flex flex-col">
                     <div className="mb-[50px] h-[2px] bg-white opacity-10" />
 
-                    <div className="flex items-center justify-between flex-wrap gap-4">
+                    <div className="flex items-center justify-around flex-col gap-4">
                         <h4 className="font-extrabold text-[24px] text-gray-700">
                             <Image
                                 src={logo}
                                 alt="headset"
-                                width={100}
-                                height={100}
+                                width={200}
+                                height={200}
                             /></h4>
                         <p className="font-normal text-[14px] text-gray-700 opacity-50">
-                            Copyright © 2023 - Hysus Digital. All rights reserved.
+                            Copyright © 2023 - Interloop Technologies. All rights reserved.
                         </p>
 
                         <div className="flex gap-4">

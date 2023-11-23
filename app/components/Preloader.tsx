@@ -1,16 +1,25 @@
 'use client'
 import { useState, useEffect } from 'react';
-import Head from 'next/head';
-import './../globals.css'
+import styled from 'styled-components';
+import './../globals.css';
+
+const Loader = styled.div`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+`;
 
 const Preloader = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a delay to show the loader for demonstration purposes
     const timeout = setTimeout(() => {
-      setLoading(false); // Set loading to false after a certain delay (you can replace this with your actual data fetching logic)
-    }, 2000); // Change this delay as per your requirement or remove this in real usage
+      setLoading(false);
+    }, 2000);
 
     return () => clearTimeout(timeout);
   }, []);
@@ -18,9 +27,9 @@ const Preloader = () => {
   return (
     <>
       {loading && (
-        <div className='loader'>
+        <Loader>
           <p>Loading...</p>
-        </div>
+        </Loader>
       )}
     </>
   );
