@@ -19,7 +19,7 @@ const ContentWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 1300px;
   width: 100%; /* Ensure ContentWrapper takes full width initially */
 `;
 
