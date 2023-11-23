@@ -50,8 +50,8 @@ const Gallery = () => {
             <Image
               src={img}
               alt={`Image ${index + 1}`}
-              width={1200}
-              height={400}
+              width={1300}
+              height={100}
               // layout='responsive'
               className='rounded-lg'
             />
