@@ -45,6 +45,7 @@ const WhatsNew = () => {
                         alt="whats new"
                         width={600}
                         height={600}
+                        className='rounded-lg'
                     >
 
                     </Image>

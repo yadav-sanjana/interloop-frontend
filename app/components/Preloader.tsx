@@ -19,7 +19,6 @@ const Preloader = () => {
     <>
       {loading && (
         <div className='loader'>
-          {/* Your loader UI or animation goes here */}
           <p>Loading...</p>
         </div>
       )}

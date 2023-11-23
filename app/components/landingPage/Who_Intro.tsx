@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect } from 'react';
-import imageIntro from '../../../public/carasoul images/keagan-henman-iFBIdX54BOk-unsplash.jpg'
+import imageIntro from '../../../public/carasoul images/pexels-ekaterina-bolovtsova-4049960.jpg'
 import Image from 'next/image';
 import { CgArrowRight } from 'react-icons/cg';
 import styles from '@/styles';
@@ -30,6 +30,7 @@ const WhoSection = () => {
                         alt="whats new lg:order-1"
                         width={600}
                         height={600}
+                        className='rounded-lg'
                     >
 
                     </Image>
