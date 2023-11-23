@@ -1,14 +1,12 @@
-'use client'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import Slider from 'react-slick';
 
 const images = [
-  '/carasoul images/pexels-andrea-piacquadio-3760067.jpg',
   '/carasoul images/pexels-ekaterina-bolovtsova-4049960.jpg',
-  '/carasoul images/pexels-shvets-production-7176026 (3).jpg',
   '/carasoul images/keagan-henman-jr6P9SoJMNs-unsplash.jpg',
   '/carasoul images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg',
 ];
@@ -24,40 +22,54 @@ const Gallery = () => {
     setCurrentImage((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextImage();
+    }, 3000); // Change the duration as needed (in milliseconds)
+
+    return () => clearInterval(interval);
+  }, [currentImage]);
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+  };
+
   return (
-    <div className='relative'>
-      <div className='relative'>
-        <Image
-          src={images[currentImage]}
-          alt={`Image ${currentImage + 1}`}
-          layout='responsive'
-          width={120}
-          height={600}
-          className='rounded-lg'
-        />
-        <button
-          onClick={prevImage}
-          className='absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-4xl focus:outline-none'
-        >
-          <FaChevronLeft />
-        </button>
-        <button
-          onClick={nextImage}
-          className='absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-4xl focus:outline-none'
-        >
-          <FaChevronRight />
-        </button>
-      </div>
-      <div className='flex justify-center mt-4 space-x-2'>
+    <div className='relative w-full'>
+      <Slider {...settings}>
         {images.map((img, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentImage(index)}
-            className={`w-6 h-6 rounded-full focus:outline-none ${index === currentImage ? 'bg-blue-500' : 'bg-gray-300'
-              }`}
-          ></button>
+          <div key={index}>
+            <Image
+              src={img}
+              alt={`Image ${index + 1}`}
+              width={1200}
+              height={400}
+              // layout='responsive'
+              className='rounded-lg'
+            />
+          </div>
         ))}
-      </div>
+      </Slider>
+
+      <button
+        onClick={prevImage}
+        className='absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-4xl focus:outline-none'
+      >
+        <FaChevronLeft />
+      </button>
+      <button
+        onClick={nextImage}
+        className='absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-4xl focus:outline-none'
+      >
+        <FaChevronRight />
+      </button>
     </div>
   );
 };
