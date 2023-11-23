@@ -6,9 +6,10 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import Slider from 'react-slick';
 
 const images = [
-  '/carasoul images/pexels-ekaterina-bolovtsova-4049960.jpg',
-  '/carasoul images/keagan-henman-jr6P9SoJMNs-unsplash.jpg',
-  '/carasoul images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg',
+  '/carasoul images/carasoul1.jpg',
+  '/carasoul images/carasoul2.jpg',
+  '/carasoul images/carasoul3.jpg',
+
 ];
 
 const Gallery = () => {
