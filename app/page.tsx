@@ -4,7 +4,7 @@ import Preloader from './components/Preloader';
 import Carasoul from './components/landingPage/Carasoul';
 import IndustriesSection from './components/landingPage/IndustrialSection';
 import ReachSection from './components/landingPage/ReachSection';
-import PartnersSection from './components/landingPage/Testimonials';
+// import PartnersSection from './components/landingPage/Testimonials';
 import WhatsNew from './components/landingPage/WhatsNew';
 import WhoSection from './components/landingPage/Who_Intro';
 import AnnouncementSection from './components/landingPage/announcementSection';
@@ -20,6 +20,7 @@ const ContentWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1200px;
+  width: 100%; /* Ensure ContentWrapper takes full width initially */
 `;
 
 export default function Home() {
