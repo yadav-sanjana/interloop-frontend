@@ -51,7 +51,7 @@ const Footer = () => {
                                 height={200}
                             /></h4>
                         <p className="font-normal text-[14px] text-gray-700 opacity-50">
-                            Copyright © 2023 - Interloop Technologies. All rights reserved.
+                            Copyright  ©{new Date().getFullYear()}  - Interloop Technologies. All rights reserved.
                         </p>
 
                         <div className="flex gap-4">
