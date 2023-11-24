@@ -20,7 +20,7 @@ const ContentWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1300px;
-  width: 100%; /* Ensure ContentWrapper takes full width initially */
+  width: 100%;
 `;
 
 export default function Home() {

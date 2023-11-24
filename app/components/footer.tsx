@@ -27,7 +27,7 @@ const Footer = () => {
             className={`${styles.xPaddings} p-4 py-8 relative`}
         >
             <div className="footer-gradient" />
-            <div className={`${styles.innerWidth} flex flex-col justify-between items-center mx-auto max-w-screen-xl p-4`}>
+            <div className={`${styles.innerWidth}mx-auto flex flex-col gap-8 max-w-screen-3xl p-4`}>
                 <div className="flex items-center justify-center flex-wrap gap-2">
                     <ul className='flex'>
                         <a href='#'><li className='p-2 space-x-1'>Introduction  |</li></a>
@@ -42,7 +42,7 @@ const Footer = () => {
                 <div className="flex flex-col">
                     <div className="mb-[50px] h-[2px] bg-white opacity-10" />
 
-                    <div className="flex items-center justify-around flex-col gap-4">
+                    <div className="flex items-center justify-between flex-wrap gap-4">
                         <h4 className="font-extrabold text-[24px] text-gray-700">
                             <Image
                                 src={logo}
