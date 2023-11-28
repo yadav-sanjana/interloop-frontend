@@ -4,12 +4,10 @@ import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import Slider from 'react-slick';
+import imageCar from '../../../public/carasoul images/plain image.jpg'
 
 const images = [
   '/carasoul images/carasoul1.jpg',
-  '/carasoul images/carasoul2.jpg',
-  '/carasoul images/carasoul3.jpg',
-
 ];
 
 const Gallery = () => {
@@ -44,18 +42,18 @@ const Gallery = () => {
 
   return (
     <section>
-      <div className="container mx-auto pt-10">
-        <div className="text-center">
+      <div className=" mx-auto pt-10 w-full">
+        <div className="">
           <div className='relative w-full'>
             <Slider {...settings}>
               {images.map((img, index) => (
                 <div key={index}>
                   <Image
-                    src={img}
+                    src={imageCar}
                     alt={`Image ${index + 1}`}
                     width={2000}
                     height={100}
-                    // layout='responsive'
+                    layout='responsive'
                     className='rounded-lg'
                   />
                 </div>
