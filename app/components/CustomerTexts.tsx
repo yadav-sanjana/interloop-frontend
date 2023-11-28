@@ -7,7 +7,6 @@ export const TypingText = ({ textStyles }: any) => (
     variants={textContainer}
     className={`font-normal text-[14px] text-secondary-white ${textStyles}`}
   >
-
   </motion.p>
 )
 
