@@ -43,35 +43,42 @@ const Gallery = () => {
   };
 
   return (
-    <div className='relative w-full'>
-      <Slider {...settings}>
-        {images.map((img, index) => (
-          <div key={index}>
-            <Image
-              src={img}
-              alt={`Image ${index + 1}`}
-              width={1300}
-              height={100}
-              // layout='responsive'
-              className='rounded-lg'
-            />
-          </div>
-        ))}
-      </Slider>
+    <section>
+      <div className="container mx-auto pt-10">
+        <div className="text-center">
+          <div className='relative w-full'>
+            <Slider {...settings}>
+              {images.map((img, index) => (
+                <div key={index}>
+                  <Image
+                    src={img}
+                    alt={`Image ${index + 1}`}
+                    width={2000}
+                    height={100}
+                    // layout='responsive'
+                    className='rounded-lg'
+                  />
+                </div>
+              ))}
+            </Slider>
 
-      <button
-        onClick={prevImage}
-        className='absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-4xl focus:outline-none'
-      >
-        <FaChevronLeft />
-      </button>
-      <button
-        onClick={nextImage}
-        className='absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-4xl focus:outline-none'
-      >
-        <FaChevronRight />
-      </button>
-    </div>
+            <button
+              onClick={prevImage}
+              className='absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-4xl focus:outline-none'
+            >
+              <FaChevronLeft />
+            </button>
+            <button
+              onClick={nextImage}
+              className='absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-4xl focus:outline-none'
+            >
+              <FaChevronRight />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
   );
 };
 

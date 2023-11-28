@@ -25,9 +25,10 @@ const ContentWrapper = styled.div`
 
 export default function Home() {
   return (
-    <Container>
+    // <Container>
+    <>
       <Preloader />
-      <ContentWrapper>
+      {/* <ContentWrapper> */}
         <Carasoul />
         <WhoSection />
         <IndustriesSection />
@@ -35,7 +36,8 @@ export default function Home() {
         <WhatsNew />
         <AnnouncementSection />
         <ReachSection />
-      </ContentWrapper>
-    </Container>
+      {/* </ContentWrapper> */}
+    </>
+    // </Container>
   );
 }
