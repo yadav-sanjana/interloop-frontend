@@ -49,10 +49,14 @@ const WhoSection = () => {
                                 <div className="mb-4">Interloop is a leading global business process and technology management company, offering Tech enabled F&A and HR solutions to wide array of companies from Fortune 500 to small and medium businesses</div>
                             </div>
                             <div className="gap-4 ">
-                                <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-                                    Learn More<CgArrowRight /></button>
-                                <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-                                    Meet our Leaders<CgArrowRight /></button>
+                                <span>
+                                    <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                                        Learn More</button>
+                                </span>
+                                <span>
+                                    <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                                        Meet our Leaders</button>
+                                </span>
 
                             </div>
                         </motion.div>

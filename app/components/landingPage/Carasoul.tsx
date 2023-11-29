@@ -4,10 +4,11 @@ import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import Slider from 'react-slick';
-import imageCar from '../../../public/carasoul images/plain image.jpg'
 
 const images = [
-  '/carasoul images/carasoul1.jpg',
+  // '/carasoul images/carasoul1.jpg',
+  '/carasoul images/plain image.jpg',
+  '/carasoul images/plain image.jpg'
 ];
 
 const Gallery = () => {
@@ -49,7 +50,7 @@ const Gallery = () => {
               {images.map((img, index) => (
                 <div key={index}>
                   <Image
-                    src={imageCar}
+                    src={img}
                     alt={`Image ${index + 1}`}
                     width={2000}
                     height={100}
