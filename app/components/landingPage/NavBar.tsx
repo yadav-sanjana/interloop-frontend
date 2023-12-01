@@ -15,7 +15,7 @@ const NavBar = () => {
     return (
         <>
             <nav className="bg-white border-gray-200 px-4">
-                <div className="flex flex-row justify-between items-center mx-auto max-w-screen-3xl p-4">
+                <div className="flex flex-row justify-between items-center mx-auto max-w-screen-3xl pt-4">
                     <div className="flex items-center space-x-3 rtl:space-x-reverse">
                         <Link href="#">
                             <Image src={logo} alt='logo' height={200} width={200} />

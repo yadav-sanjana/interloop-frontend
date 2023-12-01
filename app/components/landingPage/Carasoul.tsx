@@ -43,9 +43,9 @@ const Gallery = () => {
 
   return (
     <section>
-      <div className=" mx-auto pt-10 w-full">
-        <div className="">
-          <div className='relative w-full'>
+      <div className="mt-0 mx-auto w-full">
+        {/* <div className=""> */}
+          <div className='relative w-full h-full'>
             <Slider {...settings}>
               {images.map((img, index) => (
                 <div key={index}>
@@ -74,7 +74,7 @@ const Gallery = () => {
               <FaChevronRight />
             </button>
           </div>
-        </div>
+        {/* </div> */}
       </div>
     </section>
 
