@@ -48,7 +48,7 @@ const IndustriesSection: React.FC = () => {
 
                     <div className="w-full flex-row flex sm:w-1/2 lg:w-1/4 p-4 transition-transform duration-300 transform hover:-translate-y-1">
                         
-                        <HelpCard icon={GrUserManager} title="Q.S.R" content="Custom-built solutions let you easily manage your restaurant operations, whether you're running a single location or a network." />
+                        <HelpCard icon={GrUserManager} title="Q.S" content="Custom-built solutions let you easily manage your restaurant operations, whether you're running a single location or a network." />
                     </div>
                     <div className="w-full flex-row flex sm:w-1/2 lg:w-1/4 p-4 transition-transform duration-300 transform hover:-translate-y-1">
                         <HelpCard icon={LiaSellsy} title="Selling / Online" content="It might be difficult to manage consumers and vendors simultaneously, but interloop's AP/AR processing keeps you one step ahead." />
